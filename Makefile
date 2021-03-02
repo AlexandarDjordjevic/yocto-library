@@ -5,7 +5,7 @@ all: testlib.so
 	$(CXX) -fPIC -c testlib.cpp 
 
 testlib.so: testlib.o
-	$(CXX) $^ -shared -o testlib.so
+	$(CXX) $^ -shared -o libtestlib.so
 
 .PHONY: clean
 clean:
